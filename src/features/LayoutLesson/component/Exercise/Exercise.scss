@@ -1,0 +1,138 @@
+.Exercise-wrapper {
+  height: 100vh;
+  header {
+    height: 50px;
+    background-image: linear-gradient(to right, #4cb7e8, #0c8be0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .pre {
+      display: flex;
+      align-items: center;
+      flex: 1 1;
+      margin-left: 35px;
+      font-size: 13px;
+      color: #fff;
+      cursor: pointer;
+      i {
+        font-size: 17px;
+        margin-right: 6px;
+      }
+    }
+    .button{
+      .btn-run{  
+        cursor: pointer;     
+    border: none;
+    padding: 2px 9px;
+    border-radius: 2px;
+    background-color: #e5e6e7;
+    color: #655858;
+    font-weight: 500;
+    border: 1px solid #ccc;
+      }
+    }
+    .exercise-list {
+      display: flex;
+      div {
+        margin: 0 8px;
+        border: 1px solid #ccc;
+        padding: 2px 9px;
+        color: #fff;
+        border-radius: 4px;
+        &:hover {
+          background-color: #225e98;
+        }
+      }
+      .active {
+        background-color: #225e98;
+      }
+    }
+    p {
+      margin: 0;
+      color: #fff;
+      flex: 1 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 35px;
+
+      span {
+        color: #c30d0d;
+        font-weight: 700;
+        margin-left: 5px;
+      }
+    }
+  }
+  .Exercise-main {
+    display: flex;
+    height: calc(100% - 50px);
+    padding: 10px;
+    section {
+      height: calc(100% - 50px) !important;
+      div {
+      }
+    }
+    .result {
+      // padding-left: 20px;
+      width: 30%;
+      position: sticky;
+      .button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        button {
+          margin: 8px 12px;
+          padding: 1px 10px;
+          border: none;
+
+          border-radius: 5px;
+          color: #fff;
+        }
+        .btn-save {
+          background-color: #f32828;
+        }
+        .btn-run {
+          background-color: rgb(114, 224, 3);
+        }
+      }
+    }
+  }
+}
+.ant-tabs-tab {
+  &:hover {
+    color: #f56a07 !important;
+  }
+}
+.ant-tabs-nav {
+  &::before {
+    border-bottom: 1px solid rgb(131, 125, 125) !important;
+  }
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  font-weight: 600;
+  color: #f56a07;
+}
+.ant-tabs-ink-bar {
+  background-color: rgb(252, 70, 25);
+}
+.ant-collapse-content-box{
+  .output{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div{
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      i{
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffff;
+      }
+    }
+  }
+}

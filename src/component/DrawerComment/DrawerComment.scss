@@ -1,0 +1,94 @@
+.ant-drawer-header-title {
+  justify-content: flex-end;
+}
+.ant-drawer-header {
+  padding: 21px 4px;
+}
+.ant-drawer-body {
+  padding: 0 24px 24px;
+}
+h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.comment {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .comment-text {
+    width: 100%;
+    .comment-main {
+      max-width: 82%;
+      .comment-content {
+        // width: 100%;
+        .editCmt {
+          z-index: 10;
+          bottom: 0;
+          background: none;
+          position: relative;
+          top: -21px;
+          input {
+            background: #f2f3f5;
+            margin: 0;
+            border: none;
+            margin-left: -10px;
+            padding-right: 44px;
+          }
+          button {
+            position: absolute;
+            border: none;
+            background: none;
+            cursor: pointer;
+            right: 0;
+            padding: 1px 4px;
+            background-color: #e47474;
+            text-decoration-line: underline;
+            border-radius: 5px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .active {
+    display: flex;
+    margin-left: 16px;
+    color: #ccc;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    i {
+      position: relative;
+      &:hover {
+        ul {
+          display: block;
+          li {
+            cursor: pointer;
+
+            &:hover {
+              color: rgb(247, 85, 85);
+            }
+          }
+        }
+      }
+    }
+
+    ul {
+      box-shadow: -2px 3px 9px -1px #ccc;
+      position: absolute;
+      list-style: none;
+      width: 76px;
+      border-radius: 5px;
+      display: none;
+      padding: 4px 2px;
+      z-index: 10;
+      background-color: #fff;
+      li {
+        padding: 4px 7px;
+        color: rgb(56, 55, 55);
+        font-family: "Montserrat", "Fira Code";
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.Video-main {
+  height: 320px;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+  &:hover {
+    overflow: auto;
+  }
+  .Video-item {
+    animation-delay: 0.8s;
+  }
+}
+.Video-info {
+  display: flex;
+  padding: 0;
+  p {
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+    i {
+      font-size: 16px;
+      color: rgb(90, 88, 88);
+    }
+  }
+}

@@ -1,0 +1,416 @@
+.LayoutLesson-wrapper {
+  // header
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 70px;
+    color: #fff;
+    padding: 0 20px;
+    border: 1px solid rgb(155, 153, 153);
+
+    div {
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 20px;
+        margin: 0 10px 2px 10px;
+      }
+      img {
+        width: 204px;
+        margin-right: 18px;
+        margin-left: 22px;
+      }
+      p {
+        margin: 0;
+        font-size: 17px;
+        padding: 0 16px;
+        border-left: 1px solid rgb(105, 102, 102);
+      }
+      span {
+      }
+    }
+    .Header-right {
+      padding-right: 10px;
+      align-items: center;
+      color: black;
+      i {
+        font-size: 15px;
+        margin: 0;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+    .Header-left {
+      color: black;
+      i {
+        cursor: pointer;
+      }
+    }
+  }
+  //   content
+  .container {
+    width: 100%;
+    display: flex;
+    .container-left {
+      width: 75%;
+      position: fixed;
+      top: 70px;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      .content-lesson {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 5%;
+        margin: auto;
+        background-color: #000;
+        position: relative;
+        i {
+          cursor: pointer;
+          background: #fff;
+          color: #f60606;
+          padding: 21px 6px;
+          font-size: 20px;
+          background: linear-gradient(266deg, #d2d2d6 0%, #fcfcff 100%);
+
+          &:hover {
+            background: rgb(183, 184, 209);
+            background: linear-gradient(266deg, #ababac 0%, #fcfcff 100%);
+          }
+        }
+        .fa-chevron-left {
+          position: absolute;
+          left: 0;
+        }
+        .fa-chevron-right {
+          position: absolute;
+          right: 0;
+        }
+        iframe {
+          width: 100%;
+          height: 560px;
+          display: flex !important;
+        }
+        div {
+          position: absolute;
+          top: 0;
+          right: 0px;
+          display: none;
+          align-items: center;
+          background-color: #000;
+          opacity: 0.7;
+          margin: 20px 0;
+          border-radius: 20px;
+          span {
+            color: #fff;
+            font-size: 19px;
+            padding: 3px 10px;
+            // transition: display 0.5s linear;
+          }
+          .text {
+            display: none;
+            font-size: 16px;
+            // transition: display 0.5s linear;
+          }
+        }
+      }
+      .sub-content-lesson {
+        width: 100%;
+        background-color: #fdfdfd;
+        .sub-lesson-main {
+          width: 87%;
+          margin: auto;
+          // margin-left: 150px;
+          // margin-bottom: 100px;
+          .overview {
+            width: 80%;
+            margin-left: 30px;
+            .title {
+              margin-bottom: 30px;
+              a {
+                color: var(--color-primary);
+              }
+            }
+            .answer {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 17px;
+              h3 {
+                font-size: 19px;
+                font-weight: 600;
+                margin: 0;
+              }
+              .share {
+                display: flex;
+                align-items: center;
+                p {
+                  margin: 0;
+                  font-size: 15px;
+                  text-transform: uppercase;
+                }
+                a,
+                button {
+                  margin-left: 10px;
+                  width: 30px;
+                  color: #fff;
+                  border-radius: 50%;
+                  height: 30px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-around;
+                  transition: all 0.2s linear;
+                  &:hover {
+                    transform: scale(1.06);
+                  }
+                  i {
+                    font-size: 17px;
+                    &:hover {
+                      color: #666666;
+                    }
+                  }
+                }
+              }
+            }
+            .comment {
+              .list-comment {
+                height: 100%;
+              }
+            }
+          }
+          .note {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            div {
+              border-radius: 3px;
+              width: 78%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: auto;
+              border: 1px solid #ccc;
+              p {
+                color: #68696a;
+                margin: 0;
+                padding: 9px 10px;
+                font-weight: 500;
+                font-size: 16px;
+              }
+              i {
+                font-size: 15px;
+                margin-right: 10px;
+                color: #666666;
+                border-radius: 50%;
+              }
+            }
+          }
+          .filter {
+            margin: 27px 0 20px 9%;
+            select {
+              margin: 0 10px;
+              border-radius: 4px;
+              padding: 5px 12px;
+              outline: none;
+            }
+          }
+          .note-result,
+          .involve {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4 {
+              margin-top: 14px;
+              font-size: 16px;
+              font-weight: 600;
+              margin-bottom: 0;
+              a {
+                color: var(--color-primary);
+              }
+            }
+            p {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+    .container-right {
+      width: 25%;
+      position: fixed;
+      right: 0;
+      top: 70px;
+      overflow: auto;
+      bottom: 0;
+      z-index: 16;
+    }
+    .zoom {
+      display: none;
+      // width: 100%;
+    }
+    .view {
+      width: 100%;
+      .content-lesson {
+        div {
+          display: flex;
+          transition: display 0.5s linear;
+          &:hover {
+            .text {
+              display: flex;
+              // transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .process {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      margin: 0;
+      &:first-child {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    span {
+      font-size: 20px;
+      margin: 0px 14px;
+      color: #f61f1f;
+    }
+  }
+
+  .part {
+    .lesson {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #f0eeee;
+      .lesson-main {
+        padding: 4px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &:hover {
+          background-color: #fcd7cc;
+        }
+      }
+      .lesson-time,
+      .lesson-name {
+        padding: 2px 5px 0px 10px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0;
+          a {
+            color: rgb(48, 47, 47);
+          }
+        }
+        i {
+          margin-right: 10px;
+        }
+        .fa-check {
+          color: rgb(72, 192, 72);
+        }
+        .fa-lock {
+          color: #9d9d9d;
+        }
+        span {
+          margin: 0;
+        }
+      }
+      .lesson-name {
+        p {
+          color: rgb(37, 37, 37);
+        }
+      }
+      .lesson-time {
+        padding-left: 28px;
+        i {
+          font-size: 12px;
+          color: #ff5a5a;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+      .exercise {
+        background-color: #ebebeb;
+        h3 {
+          font-weight: 600;
+          margin: 10px 2px;
+        }
+        p {
+          margin: auto 10px;
+          background-color: #ffffff;
+          width: 25px;
+          height: 25px;
+          color: #fff;
+          border-radius: 50%;
+          text-align: center;
+          font-weight: 600;
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  #rc-tabs-0-tab-0 {
+    display: none;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .LayoutLesson-wrapper .container .container-right {
+    display: none;
+  }
+  .LayoutLesson-wrapper .container .container-left {
+    width: 100%;
+  }
+  .LayoutLesson-wrapper #rc-tabs-0-tab-0 {
+    display: flex;
+  }
+  .LayoutLesson-wrapper .container .container-left .content-lesson {
+    padding: 0 5%;
+  }
+}
+@media (min-width: 0px) and (max-width: 739px) {
+  .LayoutLesson-wrapper .container .container-right {
+    display: none;
+  }
+  .LayoutLesson-wrapper .container .container-left {
+    width: 100%;
+  }
+  .LayoutLesson-wrapper #rc-tabs-0-tab-0 {
+    display: flex;
+  }
+  .LayoutLesson-wrapper .container .container-left .content-lesson i {
+    padding: 15px 6px;
+    margin: 0px 5px;
+    background: linear-gradient(266deg, #f0f0f1 0%, #fcfcff 100%);
+    color: #666363;
+  }
+  .LayoutLesson-wrapper .container .container-left .content-lesson iframe {
+    min-height: 500px;
+  }
+  .LayoutLesson-wrapper header div img {
+    display: none;
+  }
+  .LayoutLesson-wrapper header {
+    height: 50px;
+  }
+  .LayoutLesson-wrapper .container .container-left {
+    top: 50px;
+  }
+  .LayoutLesson-wrapper .container .container-left .content-lesson {
+    padding: 0;
+  }
+}

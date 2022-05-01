@@ -1,0 +1,35 @@
+.security-heading {
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 65px;
+  h3 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 38px;
+    padding-top: 20px;
+  }
+}
+.security-module {
+  margin-top: 100px;
+  p {
+    padding: 0 200px 10px 200px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  li {
+    padding: 0 200px 10px 250px;
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  
+}
+
+@media (min-width: 0px) and (max-width: 739px) {
+  .security-module p , .security-module li{
+    padding: 0 7%;
+}
+}

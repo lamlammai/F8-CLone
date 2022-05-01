@@ -1,0 +1,157 @@
+.InfoUser-wwrapper {
+  padding: 100px 9%;
+  width: 80%;
+  h1 {
+    color: var(--color-primary);
+    font-size: var(--h1);
+    font-weight: 600;
+  }
+  .btn-active {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80%;
+    button {
+      border: 1px solid rgb(155, 155, 155);
+      border-radius: 3px;
+      padding: 2px 30px;
+      color: rgb(155, 153, 153);
+      margin: 2px 5px;
+      &:hover {
+        cursor: pointer;
+        border: 1px solid rgb(70, 69, 69);
+        color: rgb(70, 69, 69);
+      }
+    }
+    .active {
+      border-color: #e32e03;
+      color: #de1b08;
+      background-color: #ffdfcd;
+      &:hover {
+        background-color: #db6d50;
+        color: #fff;
+        border: 1px solid #c60404;
+      }
+    }
+  }
+  h2 {
+    color: #ff524a;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    margin-top: 35px;
+  }
+  .social {
+  }
+  .info {
+    width: 80%;
+    margin: 10px 0;
+    h3 {
+      color: #403e3e;
+      font-weight: 600;
+    }
+    input {
+      // font-size: 16px;
+      padding: 5px 5px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      width: 80%;
+      outline: none;
+    }
+    p {
+      width: 80%;
+      margin: 10px 0;
+      display: flex;
+      .avtUpload {
+        margin-left: 90px;
+        position: relative;
+        .avtUploadImg {
+          width: 100px;
+          height: 100px;
+          margin-left: 20px;
+          border-radius: 50%;
+          overflow: hidden;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+          }
+        }
+        label {
+          .photoupload {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            right: 0;
+            z-index: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            background: rgb(0 0 0 / 31%);
+            img {
+              width: 75%;
+              opacity: 0.5;
+            }
+          }
+          .PhotoPic {
+            position: absolute;
+            // width: 0;
+            // opacity: 0;
+            bottom: 28px;
+          }
+        }
+      }
+    }
+  }
+  .ChangPassword {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: -0.1px 2px 7.6px 0.2px #bbb7b7;
+    .changeinfo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    button {
+      border: 0;
+      padding: 4px 9px;
+      border-radius: 4px;
+      background-color: #f3684d;
+      color: #fff;
+      &:hover {
+        background-color: #f75939;
+      }
+    }
+  }
+  .ant-form-item-label
+    > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    content: "";
+  }
+  .ant-form-item-label > label {
+    font-weight: 600;
+    color: rgb(109 109 109 / 85%);
+    width: 150px;
+  }
+}
+@media (min-width: 0px) and (max-width: 739px) {
+  .InfoUser-wwrapper {
+    width: 100%;
+}.InfoUser-wwrapper .info {
+  width: 100%;
+}
+.InfoUser-wwrapper .info p{width: 100%}
+}

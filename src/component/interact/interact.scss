@@ -1,0 +1,143 @@
+.comment-user {
+  height: 100px;
+  .comment-btn {
+    display: none;
+    align-items: center;
+    margin: 8px 6px;
+    justify-content: space-between;
+    i {
+      font-weight: 400;
+      margin-left: 40px;
+      font-size: 13px;
+      align-items: center;
+      span {
+        color: rgb(92, 92, 92);
+        margin-left: 7px;
+        font-size: 13px;
+        font-family: "Montserrat";
+      }
+    }
+    div {
+      button {
+        padding: 3px 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 15px;
+        border-radius: 10px;
+      }
+      .cancel {
+        color: #929292;
+        background-color: #fff;
+        &:hover {
+          background-color: #efefef;
+        }
+      }
+      .submit {
+        color: #fff;
+        margin-left: 6px;
+        background-color: #ff5555;
+        &:hover {
+          background-color: #f3744f;
+        }
+      }
+    }
+  }
+  .show {
+    display: flex;
+  }
+}
+.comment-text {
+  display: flex;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    margin-left: 10px;
+  }
+}
+.feeling {
+  position: relative;
+  .active-react {
+    display: none;
+    position: absolute;
+    padding: 4px 4px;
+    align-items: center;
+    background-color: #fff;
+    top: -43px;
+    border-radius: 30px;
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 2px 5px;
+      &:hover {
+        transform-origin: center bottom;
+        cursor: pointer;
+        transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+        transform: scale(1.3);
+      }
+    }
+  }
+  &:hover {
+    color: rgb(255, 81, 17);
+    text-decoration: underline;
+    .active-react {
+      transition-duration: 10s;
+      transition-timing-function: ease;
+      transition-delay: 0.5s;
+      display: flex;
+    }
+  }
+}
+.comment-item {
+  .comment-main {
+    margin: 0 0 2px 15px;
+    .comment-content {
+      position: relative;
+      background-color: #f2f3f5;
+      /* margin: 0 0 2px 9px; */
+      border-radius: 12px;
+      padding: 5px 17px;
+      h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      span {
+        color: #666565;
+        font-size: 14px;
+      }
+      div {
+        position: absolute;
+        right: -7px;
+        bottom: -9px;
+        background-color: #fff;
+        padding: 2px 2px;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 13px;
+          height: 13px;
+        }
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+    .comment-react {
+      span {
+        margin: 0px 8px;
+        font-weight: 600;
+        font-size: 11px;
+        cursor: pointer;
+      }
+    }
+  }
+}

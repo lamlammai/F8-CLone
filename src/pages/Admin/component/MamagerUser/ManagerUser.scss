@@ -1,0 +1,45 @@
+.ManagerUser-wrapper {
+  h1 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .ant-table-container {
+    .ant-table-header {
+      thead {
+        tr {
+          th {
+            font-weight: 600;
+            background-color: #dbdbdb;
+          }
+        }
+      }
+    }
+    .ant-table-body {
+      tbody {
+        tr {
+          td {
+            .action {
+              padding: 1px 9px;
+              border-radius: 5px;
+              color: #fff;
+              cursor: pointer;
+              p {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+      .ant-table-tbody > tr.ant-table-row:hover > td,
+      .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+        background: #f8f4f4;
+      }
+    }
+  }
+}

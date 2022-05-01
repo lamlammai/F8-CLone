@@ -1,0 +1,84 @@
+.Form-wrapper {
+  width: 360px;
+  margin: auto;
+  form {
+    .ant-row {
+      display: block;
+      margin-bottom: 3px;
+      div {
+        label {
+          margin-left: 13px;
+          font-weight: 600;
+          &::before {
+            content: none !important;
+          }
+        }
+      }
+      div {
+        .ant-input-affix-wrapper {
+          border-radius: 35px;
+          padding: 0 11px;
+          background-color: #f2f2f2;
+          &:hover {
+            border-color: rgb(105, 104, 104);
+            box-shadow: none;
+          }
+          &:focus {
+            border-color: rgb(105, 104, 104);
+            box-shadow: none;
+          }
+          input {
+            padding: 4px 4px;
+            border-bottom: none;
+          }
+        }
+        input {
+          border-radius: 35px;
+          height: 38px;
+          outline: none;
+          background-color: #f2f2f2;
+          &:hover {
+            border-color: rgb(105, 104, 104);
+            box-shadow: none;
+          }
+          &:focus {
+            border-color: rgb(105, 104, 104);
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    button {
+      margin-top: 15px;
+      height: 45px;
+      border-radius: 65px;
+      width: 100%;
+      background-image: linear-gradient(to right, #56e8db, #d1f8ef);
+      &:active {
+        background-image: linear-gradient(to right, #33d1c4, #95ecd8);
+        border-color: none;
+      }
+      &:hover {
+        background-image: linear-gradient(to right, #35d8ca, #94ebd6);
+        border-color: none;
+      }
+      &:focus {
+        background-image: linear-gradient(to right, #35d8ca, #94ebd6);
+        border-color: none;
+      }
+      span {
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+    .forgot {
+      display: flex;
+      justify-content: flex-end;
+      &:hover {
+        color: rgb(219, 61, 61);
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.Detail-blog-wrapper {
+  display: flex;
+  justify-content: left;
+  .Detail-sub {
+    margin-left: 7%;
+    margin-right: 5%;
+    width: 10%;
+    div {
+      position: sticky;
+      top: 120px;
+      margin-right: 0px;
+      h3 {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        font-weight: 600;
+      }
+      div {
+        display: flex;
+        justify-content: space-around;
+        span {
+          padding-right: 15px;
+          .fas {
+            color: var(--color-primary);
+          }
+          i {
+            font-size: 20px;
+            margin-right: 3px;
+          }
+
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .Detail-blog-main {
+    width: 50%;
+    h1 {
+      font-size: 42px;
+      font-weight: bold;
+    }
+    .author {
+      margin: 35px 0 35px 0;
+      img {
+        border: 1px solid black;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .info {
+        margin-left: 10px;
+        h3 {
+          font-weight: 600;
+          margin-bottom: 4px;
+        }
+        .time {
+          span {
+            color: rgb(88, 85, 85);
+          }
+        }
+      }
+    }
+    .main-content {
+      border-bottom: 3px solid #da0f0f;
+      p {
+        text-align: justify;
+        line-height: 30px;
+        font-size: 16px;
+        color: rgb(82, 82, 82);
+      }
+    }
+    .other-post {
+      margin: 10px 0;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      ul {
+        margin: 15px 0 10px 39px;
+        li {
+          font-size: 18px;
+          a {
+            color: rgb(46, 45, 45);
+            &:hover {
+              color: crimson;
+              text-decoration: underline;
+              transition: text-decoration 0.5s;
+            }
+          }
+        }
+      }
+    }
+    .Blog-topic {
+      padding-bottom: 100px;
+    }
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .Detail-blog-wrapper .Detail-blog-main {
+    width: 68%;
+  }
+}
+@media (min-width: 0px) and (max-width: 739px) {
+  .Detail-blog-wrapper .Detail-sub {
+    display: none;
+  }
+  .Detail-blog-wrapper .Detail-blog-main {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}

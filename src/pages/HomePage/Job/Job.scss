@@ -1,0 +1,83 @@
+.job{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 65px;
+    min-height: 100vh;
+    .job-center{
+        .job-heading{
+            // min-height: ;
+            background-image: linear-gradient(90deg,#2b87da,#29c4a9);
+            .job-heading-module{
+                h3{
+                    font-weight: 600;
+                    text-align: center;
+                    color: white;
+                    margin-bottom: 10px;
+                    font-size: 40px;
+                    padding-top: 35px;
+                }
+                p{
+                    padding: 0 100px 50px 100px;
+                    text-align: justify;
+                    color: white;
+                    font-size: 18px;
+                }
+            }
+        }
+        .job-module{
+            margin:0 20% 0 20%;
+            .job-module-row{
+                .job-module-col{
+                    h2{
+                        font-size: 28px;
+                        font-weight: 600;
+                    }
+                    .List-job{
+                        margin-bottom: 90px;
+                        .job-item{
+                            margin-bottom: 10px;
+                            border:1px solid #EEEEEE;
+                            &:hover{
+                                cursor: pointer;
+                                box-shadow:0 0 6px 0 #c4c7cc;
+                            }
+                            div {
+                                margin: 10px 20px 10px 20px;
+                                h4{
+                                font-size:20px;
+                                font-weight:600;  
+                                }
+                                &:hover h4{
+                                    color:#f05123;
+                                }
+                            }
+                            .job-item-salary{
+                                color:#57595b;
+                                font-weight:600;
+                            }
+                    
+                            .job-item-skills{
+                                span{
+                                    margin-right: 10px;
+                                    padding: 2px;
+                                    font-size:12px;
+                                    border: 1px solid #d2d3d3;
+                                }
+                                &:hover span{
+                                    color:#f05123;
+                                }
+                                .time{
+                                    
+                                    margin-left:70%;
+                                    color: #2b87da;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

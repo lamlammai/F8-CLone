@@ -1,0 +1,55 @@
+.Learning-item {
+  -webkit-animation: itemsFade 1s ease backwards;
+  animation: itemsFade 1s ease backwards;
+  div {
+    overflow: hidden;
+    transition: all 0.3s;
+    margin-right: 24px;
+    border-radius: 16px;
+    img {
+      width: 320px;
+      border-radius: 16px;
+      max-height: 200px;
+      height: 200px;
+      overflow: hidden;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.1) translateZ(0);
+        opacity: 0.9;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+    padding: 13px 6px 5px 0px;
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
+@-webkit-keyframes itemsFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(160px);
+    transform: translateY(160px);
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes itemsFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(160px);
+    transform: translateY(160px);
+  }
+  20% {
+    opacity: 0;
+  }
+}

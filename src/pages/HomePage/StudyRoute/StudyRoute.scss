@@ -1,0 +1,191 @@
+.StudyRoute-wrapper {
+  padding: 0 30px;
+  section {
+    display: flex;
+    justify-content: space-between;
+    .Main-left {
+      width: 53%;
+
+      padding: 30px 0 60px 0;
+      h1 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 15px;
+      }
+      .Main-left-body {
+        width: 100%;
+        transition: all 0.5s;
+        .card-route {
+          transition: all 0.5s;
+          border-radius: 6px;
+          background-color: #fff;
+          border: 1px solid rgb(218, 215, 215);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          margin: 20px 0;
+          .card-img{width: 30%;
+             img {
+            width: 100%;
+            margin-left: 17px;
+            border-radius: 13px;
+          }
+          }
+         
+          .card-body {
+            width: 60%;
+            margin: 9px 25px;
+            flex-direction: column;
+            span {
+              font-weight: 700;
+              font-size: 27px;
+              margin: 5px 0px;
+              color: #f25910;
+              width: 100%;
+            }
+            a {
+              text-decoration: none;
+              color: #fff;
+              button {
+                font-weight: 600;
+                border: none;
+                padding: 8px 25px;
+                background-color: #ff5318;
+                border-radius: 27px;
+              }
+              &:hover button {
+                cursor: pointer;
+                background-color: #eb4812;
+              }
+            }
+            p {
+              letter-spacing: 0.7px;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+            }
+          }
+          &:hover {
+            box-shadow: 1px 3px 10px 1px #9e9c9c;
+          }
+        }
+      }
+    }
+    .Main-right {
+      width: 40%;
+      padding: 30px 35px;
+      border-left: 1px solid #ccc;
+      .Main-right-body {
+        width: 100%;
+        position: sticky;
+        // top: 50px;
+        span {
+          &:hover {
+            transform: scale(1.1);
+          }
+          padding: 8px 9px;
+          font-size: 13px;
+          margin: 7px 9px 9px 0;
+          i {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .StudyRoute-wrapper {
+    padding-right: 30px;
+  }
+  .StudyRoute-wrapper section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .StudyRoute-wrapper section .Main-left {
+    width: 84%;
+    padding-bottom: 10px;
+  }
+  .StudyRoute-wrapper section .Main-right {
+    border: none;
+    width: 84%;
+    padding: 0;
+    padding-bottom: 36px;
+  }
+  .StudyRoute-wrapper section .Main-right .Main-right-body span {
+    padding: 6px 6px;
+    margin: 4px 4px 7px 0;
+  }
+  .StudyRoute-wrapper section .Main-left .Main-left-body .card-route img {
+    width: 280px;
+    margin-left: 7px;
+  }
+  .StudyRoute-wrapper
+    section
+    .Main-left
+    .Main-left-body
+    .card-route
+    .card-body {
+    margin: 9px 10px;
+  }
+  .StudyRoute-wrapper
+    section
+    .Main-left
+    .Main-left-body
+    .card-route
+    .card-body
+    p {
+    font-size: 14px;
+  }
+  .StudyRoute-wrapper
+    section
+    .Main-left
+    .Main-left-body
+    .card-route
+    .card-body
+    a
+    button {
+    width: 100%;
+  }
+}
+/* mobile */
+@media (min-width: 0px) and (max-width: 739px) {
+  .StudyRoute-wrapper section .Main-left {
+    width: 100%;
+  }
+  .StudyRoute-wrapper section .Main-right {
+    display: none;
+  }
+  .StudyRoute-wrapper
+    section
+    .Main-left
+    .Main-left-body
+    .card-route
+    .card-body {
+    margin: 9px 12px;
+  }
+  .StudyRoute-wrapper section .Main-left .Main-left-body .card-route {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .StudyRoute-wrapper section .Main-left .Main-left-body .card-route img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .StudyRoute-wrapper
+    section
+    .Main-left
+    .Main-left-body
+    .card-route
+    .card-body
+    a
+    button {
+    width: 100%;
+  }
+}

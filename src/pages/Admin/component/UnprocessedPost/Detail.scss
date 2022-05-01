@@ -1,0 +1,22 @@
+.Detail-UnProcessBlog-wrapper {
+  .title {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 28px;
+      margin: 0;
+      font-weight: 700;
+    }
+    .action {
+      button {
+        border: none;
+        padding: 2px 7px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #1c96f7;
+        margin: 0 3px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,293 @@
+@mixin p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 32px;
+  color: #424242;
+}
+.Info-wrapper {
+  .container {
+    width: 100%;
+    padding-top: 50px;
+    .content {
+      padding: 50px 155px 30px 155px;
+      //   width: 80%;
+    }
+    .info {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      background-image: linear-gradient(171deg, #2b87da, #00ace0);
+      section {
+        width: 50%;
+        video {
+          width: 90%;
+        }
+        h2 {
+          color: #fff;
+          font-weight: 600;
+          font-size: 24px;
+        }
+        p {
+          @include p;
+          color: #fff;
+          text-shadow: 0 0.2rem 0.2rem #0c71c3;
+        }
+        &:last-child {
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+    .vision {
+      display: flex;
+      div {
+        width: 20%;
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:last-child {
+          margin-right: none;
+        }
+        i {
+          font-size: 70px;
+          color: rgb(192, 28, 28);
+        }
+        h3 {
+          font-size: 23px;
+          font-weight: 600;
+          color: #ff3026;
+        }
+        p {
+          @include p;
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+    }
+    .achievement {
+      display: flex;
+      margin: 40px 0;
+      align-items: center;
+      justify-content: space-evenly;
+      div {
+        text-align: center;
+        img {
+          width: 50px;
+        }
+        p {
+          margin: 0;
+          font-size: 18px;
+          text-align: center;
+          font-weight: 600;
+          span {
+            font-size: 24px;
+            background-image: linear-gradient(90deg, #0cb7d1, #32b47c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+    .receive {
+      position: relative;
+      height: 300px;
+      margin-bottom: 300px;
+      background-image: linear-gradient(171deg, #00ace0, #68337d);
+      .receive-main {
+        width: 80%;
+        // height: 500px;
+        position: absolute;
+        background-color: #fff;
+        top: 30%;
+        border-radius: 13px;
+        box-shadow: 0 12px 18px -6px rgb(0 0 0 / 12%);
+        left: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        h1 {
+          text-align: center;
+          font-weight: 600;
+          width: 100%;
+          margin: 35px 0;
+          word-spacing: 5px;
+          letter-spacing: 4px;
+        }
+        div {
+          width: 40%;
+          margin: 8px 5%;
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+          p {
+            font-size: 16px;
+            margin-bottom: 41px;
+          }
+        }
+      }
+    }
+    .quote {
+      text-align: center;
+      padding: 100px 0;
+      background-image: linear-gradient(to right, #68337d, #6076c6, #5fb4a8);
+      h1 {
+        font-size: 29px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        color: #fff;
+        font-style: italic;
+        font-weight: 600;
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        padding: 6px 37px;
+        border-radius: 40px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #ea3c3c;
+      }
+    }
+    .founder {
+      display: flex;
+      align-items: center;
+      img {
+        width: 500px;
+        border-radius: 12px;
+      }
+      div {
+        margin-left: 50px;
+        h4 {
+          font-size: 18px;
+          font-weight: 500;
+          font-style: italic;
+          font-family: "Lora", serif;
+        }
+        p {
+          text-align: right;
+          margin-right: 20px;
+        }
+      }
+    }
+    .student {
+      background-color: #f8f8f8;
+      padding-bottom: 60px;
+      h1 {
+        text-align: center;
+        font-weight: 600;
+        width: 100%;
+        word-spacing: 5px;
+        letter-spacing: 4px;
+      }
+      p {
+        font-family: "Lora", serif;
+        font-size: 16px;
+      }
+      div {
+        // max-width: 100% !important;
+        button {
+          font-size: 21px;
+          height: 20px;
+          object-fit: cover;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50%;
+          margin: 4% 0;
+          border: none;
+          background-color: #f8f8f8;
+          cursor: pointer;
+          &:hover {
+            background-color: #f8f8f8;
+            filter: none;
+          }
+        }
+        div {
+          max-width: 100% !important;
+          div {
+            .review {
+              text-align: center;
+              // margin: 0 5px !important;
+              .avt {
+                margin: auto;
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 100% auto;
+              }
+              p {
+                // padding: 2px;
+                width: 218px;
+                margin: 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-wrapper {
+    .footer-row {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 739px) {
+  .Info-wrapper .container .content{    padding: 5%;}
+  .Info-wrapper .container .info{    flex-wrap: wrap;}
+  .Info-wrapper .container .info section {
+    width: 100%;
+}
+.Info-wrapper .container .info section video {
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+.Info-wrapper .container .achievement{    margin: 40px 2%}
+.Info-wrapper .container .achievement div {
+  text-align: center;
+  margin: 0 14px;
+}
+.Info-wrapper .container .achievement div p{    font-size: 16px;}
+.Info-wrapper .container .vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Info-wrapper .container .vision div i {
+  font-size: 43px;
+}
+.Info-wrapper .container .vision div h3 {
+  font-size: 19px;}
+  .Info-wrapper .container .vision div p {
+    
+    line-height: 25px;
+    font-size: 14px;
+}
+.Info-wrapper .container .receive .receive-main h1 {
+  margin: 20px 0;
+  word-spacing: -1px;
+}
+.Info-wrapper .container .receive .receive-main div h3{    font-size: 16px;}
+.Info-wrapper .container .receive .receive-main div p {
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+.Info-wrapper .container .receive{    margin-bottom: 235px;
+}
+
+.Info-wrapper .container .founder img {
+  width: 200px;
+}
+.Info-wrapper .container .founder div h4 {
+  font-size: 13px;}
+}

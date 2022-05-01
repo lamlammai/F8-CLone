@@ -1,0 +1,43 @@
+.Statistics-Row {
+  .Statistics-col {
+    .Card {
+      height: 100px;
+      max-height: 100px;
+      padding: 8px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 5px;
+      margin: 5px 0;
+      box-shadow: 0.3px 0.5px 8.6px 0.6px #00000054;
+      .main {
+        width: 75%;
+        h1 {
+          font-size: 30px;
+          font-weight: 900;
+          line-height: 28px;
+        }
+        h1,
+        h3 {
+          color: #fff;
+          margin-bottom: 0;
+        }
+        p {
+          color: #fff;
+        }
+      }
+      .icon {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        margin-left: 11px;
+        background: #000000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}

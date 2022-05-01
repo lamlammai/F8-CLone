@@ -1,0 +1,125 @@
+.Detail-wrapper {
+  .StudyRoute-wrapper {
+    .Main-row {
+      .Main-left {
+        h1 {
+          font-size: 30px;
+          font-weight: 600;
+          color: rgb(245, 98, 40);
+        }
+        p {
+          color: rgb(111, 110, 112);
+          strong {
+            color: rgb(231, 91, 48);
+          }
+        }
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+          color: rgb(245, 98, 40);
+        }
+        blockquote {
+          position: relative;
+          padding: 18px 0 0px 26px;
+          font-family: "Gwendolyn", cursive;
+          font-size: 30px;
+          font-weight: bold;
+          color: #343335;
+          i {
+            position: absolute;
+            color: #f66d0c;
+            top: 22px;
+            left: 3px;
+            font-size: 18px;
+          }
+        }
+        
+      }
+      .Main-right {
+        .Main-right-body {
+          .Detail-info {
+            h2 {
+              font-weight: 600;
+              color: rgb(255, 36, 36);
+            }
+
+            p {
+              color: #7c7e80;
+              font-size: 15px;
+              margin-bottom: 7px;
+              line-height: 28px;
+              i {
+                margin-right: 10px;
+              }
+              .fa-user-check {
+                color: rgb(243, 63, 8);
+              }
+              .error {
+                color: rgb(243, 63, 8);
+              }
+              .question {
+                color: rgb(30, 106, 219);
+              }
+              .tick {
+                color: rgb(49, 228, 4);
+              }
+            }
+            .text {
+              font-weight: 600;
+            }
+          }
+          img {
+            width: calc(100% + 30px);
+            border-radius: 10px;
+            box-shadow: 0px 2px 12px 1.3px #4545456e;
+          }
+        }
+      }
+    }
+  }
+}
+.Detail-content{
+  .card-route{
+    img{
+      width: 250px;
+      height: 100%;
+      margin-left: 15px;
+    }
+  }
+}
+@media (max-width: 1147px) {.Detail-content .card-route img {
+  width: 185px;}}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .Detail-wrapper {
+    .StudyRoute-wrapper section .Main-right {
+      display: none;
+    }
+    .StudyRoute-wrapper section .Main-left {
+      width: 80%;
+      margin: auto;
+    }
+    .StudyRoute-wrapper section .Main-left .Main-left-body .card-route img {
+      width: 250px;
+      margin-left: 17px;
+    }
+    .StudyRoute-wrapper
+      section
+      .Main-left
+      .Main-left-body
+      .card-route
+      .card-body {
+      margin: 17px 20px;
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 739px) {
+  .StudyRoute-wrapper section .Main-left .Main-left-body .card-route .card-body{
+    width: 95%;
+    margin: auto;
+  }.StudyRoute-wrapper section .Main-left .Main-left-body .card-route .card-body a button {
+    width: auto;
+    margin-bottom: 20px;
+}
+
+
+}

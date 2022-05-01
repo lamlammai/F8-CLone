@@ -1,0 +1,125 @@
+.Document-wrapper {
+  .BookMask {
+    margin-left: 4%;
+    margin-right: 3%;
+    width: 14%;
+    div {
+      position: sticky;
+      top: 110px;
+      ul {
+        list-style: none;
+        p {
+          font-size: 21px;
+          color: var(--color-primary);
+          margin-bottom: 10px;
+          i {
+            font-size: 19px;
+          }
+        }
+        li {
+          transition: all 0.3s linear;
+          margin: 10px 21px;
+          a {
+            position: relative;
+            line-height: 25px;
+            color: #777777;
+
+            transition: all 0.3s linear;
+            &:hover {
+              color: var(--color-primary);
+              &::after {
+                width: 100%;
+              }
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              background-color: var(--color-primary);
+              height: 2px;
+              width: 0;
+              left: 0;
+              bottom: -5px;
+              transition: all 0.3s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Detail-blog-main {
+    .author {
+      padding: 10px 0;
+      margin: 0;
+    }
+    .main-content {
+      border-bottom: none;
+      .sub-title {
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(100, 99, 99);
+        a {
+          color: var(--color-primary);
+        }
+      }
+      .part {
+        margin: 22px 0;
+        border-bottom: 1px solid #ccc;
+        h2 {
+          font-weight: 600;
+          font-size: 27px;
+          &:hover {
+            i {
+              display: inline-block;
+            }
+          }
+          i {
+            margin-right: 10px;
+            display: none;
+          }
+        }
+        .main {
+          h3 {
+            font-weight: 600;
+            font-size: 20px;
+          }
+          div {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            img {
+              width: 50%;
+            }
+            .img-product {
+              width: 100%;
+            }
+          }
+          p {
+            text-align: left;
+            a {
+              color: var(--color-primary);
+              text-decoration: underline;
+              &:hover {
+                color: rgb(214, 113, 113);
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-contact {
+      border-bottom: 2px solid var(--color-primary);
+      ul {
+        padding: 0 20px;
+        li {
+          font-size: 16px;
+          a {
+            color: var(--color-primary);
+          }
+        }
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

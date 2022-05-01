@@ -1,0 +1,66 @@
+.Home-wrapper {
+  margin-top: 23px;
+  .content-right-body {
+    p {
+      color: #82919b;
+    }
+    padding: 42px 46px;
+    margin-bottom: 60px;
+    .SectionList-wrapper {
+      padding: 0px 0 25px 0;
+      -webkit-animation: itemsFade 1s ease backwards;
+      animation: itemsFade 1s ease backwards;
+      .SectionList-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+          margin: 0;
+          font-style: 29px;
+          font-weight: 700;
+        }
+      }
+      .Course-main {
+        height: 280px;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        transition: all 0.5s;
+        &:hover {
+          overflow: auto;
+        }
+      }
+
+      .UnstudyCourses-main {
+        height: 302px;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        &:hover {
+          overflow: auto;
+        }
+      }
+    }
+  }
+}
+@-webkit-keyframes itemsFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(160px);
+    transform: translateY(160px);
+  }
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes itemsFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(160px);
+    transform: translateY(160px);
+  }
+  20% {
+    opacity: 0;
+  }
+}

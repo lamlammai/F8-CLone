@@ -1,0 +1,81 @@
+.TodoWork-wrapper {
+  margin: 26px 0px 0;
+  max-height: 358px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 11.5px -4px #0000003d;
+  h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #525252;
+    padding: 6px 2px;
+    border-bottom: 1px solid #ccc;
+    span {
+      margin-right: 6px;
+    }
+  }
+  form {
+    border-bottom: 1px solid #ccc;
+    input {
+      width: 82%;
+      outline: none;
+      border: none;
+      padding: 5px 6px;
+    }
+    button {
+      border: none;
+      width: 18%;
+      color: #fff;
+      padding: 5px 0px;
+      background-color: rgb(226, 41, 28);
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 11px 14px;
+    max-height: 246px;
+    overflow-y: scroll;
+    li {
+      padding: 9px 0px;
+      background-color: #f8f9fa;
+      border-left: 3px solid #d0d0d0;
+      margin: 5px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        display: flex;
+        align-items: center;
+        .list {
+          font-size: 20px;
+        }
+        input[type="checkbox"] {
+          /* Double-sized Checkboxes */
+          -ms-transform: scale(1.4); /* IE */
+          -moz-transform: scale(1.4); /* FF */
+          -webkit-transform: scale(1.4); /* Safari and Chrome */
+          -o-transform: scale(1.4); /* Opera */
+          transform: scale(1.4);
+          padding: 10px;
+        }
+        input {
+          margin: 0 6px;
+        }
+      }
+      i {
+        margin-right: 9px;
+        color: #da2929;
+        opacity: 0.5;
+      }
+    }
+    .done {
+      span,
+      input {
+        text-decoration: line-through;
+        opacity: 0.5;
+      }
+      i {
+        opacity: 1;
+      }
+    }
+  }
+}

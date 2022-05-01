@@ -1,0 +1,23 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
+  i {
+    font-size: 41px;
+    color: var(--color-primary);
+  }
+}
+.hidden-header {
+  -webkit-transform: translateY(-67px);
+  transform: translateY(-67px);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

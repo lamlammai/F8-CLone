@@ -1,0 +1,41 @@
+.Post-main {
+  animation-delay: 0.6s;
+  height: 254px;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+  &:hover {
+    overflow: auto;
+  }
+  .Post-item {
+    img {
+      height: 160px;
+    }
+  }
+  h3 {
+    padding: 0;
+    padding-right: 20px;
+  }
+  .Author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    bottom: 0;
+    img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 2px;
+    }
+    p {
+      margin: 0;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    .name {
+      color: black;
+      font-weight: 600;
+    }
+  }
+}

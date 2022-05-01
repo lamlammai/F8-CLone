@@ -1,0 +1,100 @@
+.SignIn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../utils/backgroud.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .Modal-SignIn {
+    width: 600px;
+    height: 550px;
+    padding: 50px;
+    margin: auto;
+    background-color: #fff;
+    align-content: space-between;
+    flex-direction: column;
+    border-radius: 23px;
+    position: relative;
+    .Modal-title {
+      text-align: center;
+      img {
+        width: 50px;
+        border-radius: 10%;
+      }
+      h3 {
+        font-weight: 800;
+        font-size: 26px;
+        margin: 15px 0 30px 0;
+      }
+    }
+    .Modal-main {
+      width: 360px;
+      margin: auto;
+      div {
+        cursor: pointer;
+        border: 2px solid #ddd;
+        padding: 8px 9px;
+        margin-bottom: 5px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        img {
+          margin-right: 25px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .Modal-info {
+      margin: 4% 0;
+      text-align: center;
+      font-size: 15px;
+      a {
+        color: red;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+    .Login-about {
+      position: absolute;
+      bottom: -28px;
+      left: 16%;
+      color: rgb(250, 250, 250);
+      margin: auto;
+      span {
+        padding: 0 10px;
+        border-right: 1px solid #ccc;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+    .exitLogin {
+      position: absolute;
+      top: 22px;
+      left: 19px;
+      i {
+        font-size: 23px;
+      }
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 739px) {
+  .SignIn-wrapper .Modal-SignIn{
+    width: 90%;
+    padding: 10px;
+  }
+  .SignIn-wrapper .Modal-SignIn .Login-about{
+    display: none;
+  }
+  .SignIn-wrapper .Modal-SignIn .Modal-title h3{
+    font-size: 20px;
+     margin: 0px;
+  }
+}

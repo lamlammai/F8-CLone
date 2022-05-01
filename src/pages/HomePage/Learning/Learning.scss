@@ -1,0 +1,57 @@
+.Learning-wrapper {
+  section {
+    h1 {
+      font-size: 34px;
+      font-weight: 900;
+      margin: 0;
+    }
+    p {
+      font-size: 15px;
+      color: #6a6666;
+    }
+    padding: 30px 60px;
+    h2 {
+      // margin: 15px 0 0 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .LearingList {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .Learning-item {
+        width: 25%;
+        margin: 10px 0;
+        div {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .Learning-wrapper section .LearingList .Learning-item {
+    width: 33.333%;
+  }
+  .Learning-item div {
+    margin-right: 14px;
+  }
+}
+@media (min-width: 0px) and (max-width: 739px) {
+  .Learning-wrapper section {
+    padding: 20px;
+  }
+  .Learning-wrapper section .LearingList .Learning-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Learning-item div {
+    margin-right: 12px;
+  }
+  .Learning-wrapper section .LearingList .Learning-item div img {
+    max-height: 350px;
+  }
+}
